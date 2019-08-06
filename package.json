@@ -1,0 +1,64 @@
+{
+  "name": "react-gauge-chart-nocss",
+  "version": "0.2.1",
+  "main": "dist/index",
+  "module": "dist/index",
+  "typings": "dist/index",
+  "homepage": "https://github.com/askthecloudguy/react-gauge-chart-nocss/",
+  "keywords": [
+    "visualization",
+    "react",
+    "gauge chart",
+    "speedometer"
+  ],
+  "license": "MIT",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/askthecloudguy/react-gauge-chart-nocss"
+  },
+  "dependencies": {
+    "d3": "^5.9.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "prebuild": "rimraf dist",
+    "build": "NODE_ENV=production babel src/lib --out-dir dist --copy-files",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/runtime": "^7.4.4",
+    "babel-preset-react-app": "^8.0.0",
+    "cross-env": "^5.2.0",
+    "gh-pages": "^2.0.1",
+    "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.8",
+    "react-dom": "^16.8.6",
+    "react-scripts": "2.1.5",
+    "rimraf": "^2.6.3"
+  },
+  "peerDependencies": {
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2"
+  }
+}
